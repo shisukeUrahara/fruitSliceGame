@@ -1,0 +1,166 @@
+html{
+    background:radial-gradient(circle,#fff,#ccc);
+    height:100%;
+    border:1px solid red;
+}
+
+#container{
+    background-color:#9DD2EA;
+    height:800px;
+    width:800px;
+    margin:20px auto;
+    padding:20px;
+    border-radius: 20px;
+    position: relative;
+}
+#score{
+    background-color: #F1FF92;
+    color:#888E5F;
+    padding:10px;
+    /* float:right; */
+    position: absolute;
+    left:750px;
+
+}
+
+#correct{
+    position: absolute;
+    left:300px;
+    background-color:green;
+    color:white;
+    padding:10px;
+    display:none;
+}
+
+#tryAgain{
+    position: absolute;
+    left:300px;
+    background-color:red;
+    color:white;
+        padding:10px;
+        display:none;
+}
+
+#fruitsContainer{
+    width:650px;
+    height:400px;
+    background-color:white;
+    margin:50px auto 10px auto;;
+    text-align:center;
+    font-family:cursive;
+    font-size:100px;
+    position: relative;
+    overflow: hidden;
+}
+
+#instruction{
+    width:450px;
+    height:50px;
+    background-color: #B48149;
+    margin:10px auto 10px auto;
+    /* padding:40px auto; */
+    color:brown;
+    font-family:sans-serif;
+    font-size:20px;
+    text-align:center;
+    line-height: 45px;
+}
+
+#choices{
+    width:450px;
+    height:100px;
+    margin:5px auto;
+    /* border:1px solid white; */
+}
+
+.box{
+    background-color:white;
+    width:85px;
+    height:85px;
+    float:left;
+    margin-right: 35px;
+    border-radius:4px;
+    cursor: pointer;
+    line-height:60px;
+    font-size:40px;
+    text-align:center;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    position: relative;
+    transition:all 0.2s;
+}
+#box4{
+    margin-right:0px;
+}
+.box:hover,#startReset:hover{
+    background-color:cyan;
+    color:white;
+    box-shadow: 0px 4px #6B54D3;
+    -webkit-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px rgba(0,0,0,0.2);
+
+}
+
+.box:active,#startReset:active{
+    background-color:0px 4px #6B54D3;
+    top:4px;
+}
+
+#startReset{
+    background-color:white;
+    width:78px;;
+    padding:10px;
+    /* height:85px; */
+    /* float:left; */
+    /* margin-right: 35px; */
+    margin:0 auto;
+    border-radius:4px;
+    cursor: pointer;
+    /* line-height:60px; */
+    font-size:20px;
+    text-align:center;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px rgba(0,0,0,0.2);
+    position: relative;
+    transition:all 0.2s;
+}
+#trialsLeft{
+    width:152px;
+    padding:10px;
+    position:absolute;
+    background-color: #F1FF92;
+    border-radius:4px;
+    /* visibility: hidden; */
+    display:none;
+}
+
+#gameOver{
+    width:500px;
+    height:250px;
+    background:linear-gradient(#F3CA6B,#F3706C);
+    color:white;
+    font-size:40px;
+    text-transform:uppercase;
+    position: absolute;
+    top:140px;
+    left:180px;
+    z-index:2;
+    display:none;
+
+}
+/* // styling the fruits */
+.heart{
+    margin-right: 10px;
+}
+.fruit{
+    display: none;
+    position: absolute;
+}
